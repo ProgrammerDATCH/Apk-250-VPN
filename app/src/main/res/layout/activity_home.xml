@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:id="@+id/activity_mainLinearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="top|center"
+				android:padding="5dp">
+
+				<android.support.v7.widget.CardView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					app:cardCornerRadius="15dp"
+					app:cardBackgroundColor="#000000"
+					android:orientation="vertical"
+					android:layout_marginTop="5dp"
+					android:paddingLeft="2dp"
+					android:layout_marginRight="2dp">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="5dp">
+
+						<RelativeLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="3dp">
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="20dp">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="SELECT SERVER"
+									android:textAppearance="?android:attr/textAppearanceSmall"
+									android:textColor="#ffffff"
+									android:textSize="14sp"
+									android:gravity="bottom"
+									android:layout_marginLeft="5dp"/>
+
+								<Spinner
+									android:layout_width="wrap_content"
+									android:layout_height="55dp"
+									android:id="@+id/serverSpinner"
+									android:popupBackground="#000000"/>
+
+							</LinearLayout>
+
+							<LinearLayout
+								android:orientation="vertical"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:gravity="left|center"
+								android:layout_alignParentRight="true">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="SELECT PORT"
+									android:textAppearance="?android:attr/textAppearanceSmall"
+									android:textColor="#ffffff"
+									android:textSize="14sp"
+									android:gravity="bottom"
+									android:paddingRight="10dp"/>
+
+								<Spinner
+									android:layout_width="wrap_content"
+									android:layout_height="55dp"
+									android:id="@+id/ports"
+									android:popupBackground="#000000"/>
+
+							</LinearLayout>
+
+						</RelativeLayout>
+
+						<android.support.v7.widget.CardView
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="20dp"
+							android:layout_marginTop="10dp"
+							app:cardCornerRadius="8dp"
+							app:cardBackgroundColor="#000000"
+							android:gravity="center"
+							android:layout_marginLeft="3dp"
+							android:layout_marginRight="3dp">
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center">
+
+								<ImageView
+									android:src="@drawable/ic_arrow_up"
+									android:layout_width="18dp"
+									android:layout_height="18dp"
+								
+									/>
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="0 B"
+									android:textAppearance="?android:attr/textAppearanceSmall"
+									android:layout_marginLeft="3dp"
+									android:id="@+id/bytes_out"
+									android:textColor="#FFFFFF"/>
+
+								<ImageView
+									android:src="@drawable/ic_arrow_down"
+									android:layout_width="18dp"
+									android:layout_height="18dp"
+									android:layout_marginLeft="10dp"
+									
+									/>
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="0 B"
+									android:textAppearance="?android:attr/textAppearanceSmall"
+									android:layout_marginLeft="3dp"
+									android:id="@+id/bytes_in"
+									android:textColor="#FFFFFF"/>
+
+							</LinearLayout>
+
+						</android.support.v7.widget.CardView>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="20dp"
+							android:gravity="center_vertical">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="CONNECTION MODE"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textColor="#ffffff"
+								android:textSize="14sp"
+								android:layout_marginLeft="5dp"/>
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="right|center">
+
+								<RelativeLayout
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="3dp"
+									android:gravity="center"
+									android:id="@+id/add_c">
+
+									<Switch
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Custom Setup"
+										android:id="@+id/ckSetup"
+										android:textSize="14sp"/>
+
+								</RelativeLayout>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+						<Spinner
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="5dp"
+							android:id="@+id/payloadSpinner"
+							android:popupBackground="#000000"/>
+
+						<Spinner
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="5dp"
+							android:id="@+id/setupSpinner"
+							android:popupBackground="#000000"
+							android:visibility="gone"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/messageLayout"
+							android:visibility="gone">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Config Message"
+								android:textColor="#ffffff"
+								android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#ffffff"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:id="@+id/tvMessage"/>
+
+						</LinearLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/payloadLayout"
+							android:layout_marginTop="5dp"
+							android:visibility="gone">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/edCustomPayload"
+								android:visibility="gone"
+								android:hint="Payload"
+								android:textSize="15sp"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/sniLayout"
+							android:visibility="gone">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/edCustomSSL"
+								android:visibility="gone"
+								android:textSize="15sp"
+								android:hint="SNI (Server Name Indicator)"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/sslpayloadLayout"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:visibility="gone"
+								android:layout_height="wrap_content"
+								android:id="@+id/sslCustomPayload"
+								android:hint="Payload"
+								android:textSize="15sp"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:visibility="gone"
+							android:id="@+id/snipayloadLayout">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/sniCustomSSL"
+								android:visibility="gone"
+								android:textSize="15sp"
+								android:hint="SNI (Server Name Indicator)"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/bugLayout"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:visibility="gone"
+								android:layout_height="wrap_content"
+								android:id="@+id/webBug"
+								android:textSize="15sp"
+								android:hint="Bughost (Websocket)"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/UserLayout"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:visibility="gone"
+								android:layout_height="wrap_content"
+								android:id="@+id/webUser"
+								android:textSize="15sp"
+								android:inputType="text"
+								android:hint="Username (Websocket)"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:visibility="gone"
+							android:id="@+id/PassLayout">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/webPass"
+								android:visibility="gone"
+								android:textSize="15sp"
+								android:inputType="text"
+								android:hint="Password (Websocket)"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/pubLayout"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/textPub"
+								android:hint="Public Key"
+								android:visibility="gone"
+								android:textSize="15sp"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:visibility="gone"
+							android:id="@+id/svLayout">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/textServer"
+								android:visibility="gone"
+								android:textSize="15sp"
+								android:hint="DNS (Server Name)"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/DnsLayout"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/textDns"
+								android:textSize="15sp"
+								android:visibility="gone"
+								android:hint="Dns (8.8.8.8)"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/UserDns"
+							android:visibility="gone"
+							android:layout_marginTop="5dp">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/textUser"
+								android:textSize="15sp"
+								android:inputType="text"
+								android:hint="Username (SlowDns)"
+								android:maxLines="5"/>
+
+						</android.support.design.widget.TextInputLayout>
+
+						<android.support.design.widget.TextInputLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:visibility="gone"
+							android:id="@+id/PassDns">
+
+							<EditText
+								android:layout_width="match_parent"
+								android:ems="10"
+								android:layout_height="wrap_content"
+								android:id="@+id/textPass"
+								android:textSize="15sp"
+								android:inputType="text"
+								android:visibility="gone"
+								android:hint="Password (SlowDns)"/>
+
+						</android.support.design.widget.TextInputLayout>
+						
+						<Button
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="START"
+							android:backgroundTint="?colorPrimary"
+							android:layout_marginTop="10dp"
+							android:textColor="#FFFFFFFF"
+							android:id="@+id/activity_starterButtonMain"/>
+
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center">
+
+								<ImageView
+									android:src="@drawable/timer"
+									android:layout_width="30dp"
+									android:layout_height="30dp"
+									android:layout_marginLeft="3dp"/>
+
+								<LinearLayout
+									android:orientation="vertical"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:layout_margin="5dp"
+									android:layout_weight="1.0">
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Time Left:"
+										android:textAppearance="?android:attr/textAppearanceSmall"
+										android:textStyle="bold"
+										android:textColor="#ffffff"/>
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="00:00"
+										android:textSize="15sp"
+										android:textAppearance="?android:attr/textAppearanceMedium"
+										android:id="@+id/timerTextView"
+										android:textColor="#ffffff"/>
+
+								</LinearLayout>
+
+								<Button
+									android:layout_width="150dp"
+									android:layout_height="40dp"
+									android:text="ADD + TIME"
+									android:id="@+id/btnAddTime"
+									android:textColor="#ffffff"
+									android:backgroundTint="?colorPrimary"
+									android:layout_marginRight="7dp"/>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+					
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="200dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:padding="5dp"
+						android:visibility="gone">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Disconnected"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:id="@+id/connection_status"/>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:gravity="left|center">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:gravity="right|center|center_vertical"
+						android:id="@+id/customs">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="Google DNS"
+							android:textColor="#00000f"
+							android:textSize="13sp"
+							android:gravity="center"
+							android:id="@+id/customP"/>
+
+						<CheckBox
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:id="@+id/useDns"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:text="GEO (Location)"
+							android:textSize="13sp"
+							android:textColor="#000000"
+							android:gravity="center"/>
+
+						<CheckBox
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/geo_location"/>
+
+					</LinearLayout>
+
+				</RelativeLayout>
+				<com.google.android.gms.ads.AdView
+					xmlns:ads="http://schemas.android.com/apk/res-auto"
+					android:id="@+id/adView1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_alignParentBottom="true"
+					ads:adSize="BANNER"
+					ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+					android:layout_gravity="bottom"
+					android:layout_marginTop="10dp">
+
+				</com.google.android.gms.ads.AdView>
+				
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+	<include
+		layout="@layout/h_to"/>
+
+</RelativeLayout>
+

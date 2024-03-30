@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:gravity="center"
+		android:background="?colorPrimary"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="40.0dip"
+			android:layout_height="40.0dip"
+			android:layout_margin="20.0dip"
+			android:src="@drawable/icon"
+			android:adjustViewBounds="true"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"
+		android:id="@+id/blckTextView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10.0dip"
+		android:text="ADMIN ACCESS"
+		android:layout_marginBottom="10dp"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceSmall"
+		android:gravity="center"
+		android:id="@+id/blckTextView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Only authorized user can perform this action!"
+		android:textStyle="normal"/>
+
+	<EditText
+		android:textAppearance="?android:textAppearanceSmall"
+		android:id="@+id/code"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:hint="Code"/>
+
+</LinearLayout>
+

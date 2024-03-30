@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/setupSpinner"
+		android:visibility="gone"
+		android:layout_marginBottom="5dp"/>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/payloadLayout"
+		android:layout_marginTop="5dp"
+		android:visibility="gone">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/edCustomPayload"
+			android:visibility="gone"
+			android:hint="Payload"
+			android:textSize="15sp"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/sniLayout"
+		android:visibility="gone">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/edCustomSSL"
+			android:visibility="gone"
+			android:textSize="15sp"
+			android:hint="SNI (Server Name Indicator)"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/sslpayloadLayout"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:id="@+id/sslCustomPayload"
+			android:hint="Payload"
+			android:textSize="15sp"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/snipayloadLayout">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/sniCustomSSL"
+			android:visibility="gone"
+			android:textSize="15sp"
+			android:hint="SNI (Server Name Indicator)"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/bugLayout"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:id="@+id/webBug"
+			android:textSize="15sp"
+			android:hint="Bughost (Websocket)"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/UserLayout"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:visibility="gone"
+			android:layout_height="wrap_content"
+			android:id="@+id/webUser"
+			android:textSize="15sp"
+			android:inputType="text"
+			android:hint="Username (Websocket)"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/PassLayout">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/webPass"
+			android:visibility="gone"
+			android:textSize="15sp"
+			android:inputType="text"
+			android:hint="Password (Websocket)"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/pubLayout"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/textPub"
+			android:hint="Public Key"
+			android:visibility="gone"
+			android:textSize="15sp"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/svLayout">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/textServer"
+			android:visibility="gone"
+			android:textSize="15sp"
+			android:hint="DNS (Server Name)"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/DnsLayout"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/textDns"
+			android:textSize="15sp"
+			android:visibility="gone"
+			android:hint="Dns (8.8.8.8)"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/UserDns"
+		android:visibility="gone"
+		android:layout_marginTop="5dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/textUser"
+			android:textSize="15sp"
+			android:inputType="text"
+			android:hint="Username (SlowDns)"
+			android:maxLines="5"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/PassDns">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/textPass"
+			android:textSize="15sp"
+			android:inputType="text"
+			android:visibility="gone"
+			android:hint="Password (SlowDns)"/>
+
+	</android.support.design.widget.TextInputLayout>
+</LinearLayout>
+

@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/miOption"
+        android:icon="@drawable/ic_cog"
+        app:showAsAction="always">
+    </item>
+    
+    <item 
+        android:id="@+id/mConfigMenu"
+        android:title="Import/Export">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item 
+                android:id="@+id/mImport" 
+                android:title="Import Config" />
+            <item 
+                android:id="@+id/mExport" 
+                android:title="Export Config" />
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/miUpdate"
+		android:title="Config Update">
+        
+    </item>
+    
+    <item
+        android:id="@+id/offline"
+		android:title="Offline">
+        
+    </item>
+	
+</menu>

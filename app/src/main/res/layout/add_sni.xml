@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="?colorPrimary"
+		android:gravity="center_vertical"
+		android:padding="10dp">
+
+		<ImageView
+			android:layout_height="30dp"
+			android:layout_width="30dp"
+			android:tint="#ffffff"
+			android:src="@drawable/ic_mode_edit_black_24dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Custom SNI"
+			android:layout_marginLeft="20dp"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:id="@+id/ctitle"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="?dialogPreferredPadding"
+		android:paddingRight="?dialogPreferredPadding"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Tweak Name:"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginTop="10dp"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="10"
+				android:id="@+id/sni_name"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Server Name Indicator (SNI)"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginTop="10dp"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="5"
+				android:id="@+id/add_sni"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

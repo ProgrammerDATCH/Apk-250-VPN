@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:background="#000000"
+	android:padding="5dp">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:paddingBottom="10dp">
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerLog"
+				android:gravity="start"
+				android:layout_width="fill_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"/>
+
+			<com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adBannerMainView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginTop="3dp"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-6670692272691929/8182385078"
+				android:layout_gravity="center">
+
+			</com.google.android.gms.ads.AdView>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_alignParentBottom="true">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:gravity="bottom"
+				android:orientation="vertical">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

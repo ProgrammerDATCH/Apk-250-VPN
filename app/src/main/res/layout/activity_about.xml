@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:background="#ffffff"
+	>
+
+	<include
+		layout="@layout/toolbar_main"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="10dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.v7.widget.CardView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="2.0dip"
+				app:cardElevation="2.0dip"
+				app:cardUseCompatPadding="true"
+				app:cardBackgroundColor="#ffffff"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dip"
+					android:paddingBottom="10dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingRight="5dp"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dip"
+						android:layout_marginBottom="10dip"
+						android:minHeight="50dp"
+						android:paddingLeft="5dp">
+
+						<View
+							android:layout_width="15dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageView
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:src="@drawable/icon"/>
+
+						<View
+							android:layout_width="15dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Title"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:text="@string/app_name"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="#000000"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#000000"
+							app:srcCompat="@drawable/ic_info"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:text="Version"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:textColor="#000000"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:id="@+id/appVersion"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/changelog"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#000000"
+							app:srcCompat="@drawable/ic_autorenew_black_24dp"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#000000"
+							android:text="Guide"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/license"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#000000"
+							app:srcCompat="@drawable/ic_book"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Licensa"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="10dp"/>
+
+			<android.support.v7.widget.CardView
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="2.0dip"
+				app:cardElevation="2.0dip"
+				app:cardUseCompatPadding="true"
+				app:cardBackgroundColor="#ffffff"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					>
+
+					<TextView
+						android:textColor="#000000"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:textSize="19sp"
+						android:text="TERM OF USE"
+						android:textStyle="bold"
+			/>
+					<TextView
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_marginBottom="10dp"
+						android:textColor="#424242"
+						android:text="By using this program, you agree to all of the quotations below."/>
+				
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							android:paddingBottom="10dp"
+							>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textStyle="bold"
+								android:textSize="15sp"
+								android:textColor="#000000"
+								android:text="Responsibility"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"							
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_margin="5dp"
+								android:textColor="#424242"
+								android:gravity="center"
+								android:text="Consider this program as a network tool that ensures security and anonymity and enables you to customize the start of the connection to the server. With the start of the custom connection,  it is possible	to bypass restrictions imposed on any type of internet network. The user is responsible for any damage caused to a network that is vulnerable to this technique and is also responsible for the damage caused to itself (charges, processes...)."/>
+						</LinearLayout>
+
+						
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+					>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="bold"
+							android:textSize="15sp"
+							android:textColor="#000000"
+							android:text="Service Warranty"/>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"							
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:textColor="#424242"
+							android:gravity="center"
+							android:text="We use the SSH 2.0, and TLS protocol to cover the entire connection between client and server, so our service is susceptible to the same flaws and vulnerabilities present in this technology. We do not guarantee full connection stability or full server availability, but we will do everthing possible to make everything work well."/>
+					</LinearLayout>
+						
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+					>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="bold"
+							android:textSize="15sp"
+							android:textColor="#000000"
+							android:text="Privacy"/>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"							
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:textColor="#424242"
+							android:gravity="center"
+							android:text="It collects statistics of usage and crash reports, collected  by Google Play, Firebase... It also collects search history and geographic location for advertisement selection."/>
+					</LinearLayout>
+						
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:paddingBottom="10dp"
+					>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="bold"
+							android:textSize="15sp"
+							android:textColor="#000000"
+							android:text="Advertisement"/>
+
+						<TextView
+							android:textAppearance="@style/TextAppearance.AppCompat.Caption"							
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:textColor="#424242"
+							android:gravity="center"
+							android:text="Our service are made possible by displaying online advertisement to our visitors. Please consider supporting us by disablong your ad blocker."/>
+					</LinearLayout>
+					
+						
+						
+					</LinearLayout>
+			
+					
+					
+				
+			</android.support.v7.widget.CardView>
+			
+			
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="10dp"/>
+
+			<android.support.v7.widget.CardView
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="2.0dip"
+				app:cardElevation="2.0dip"
+				app:cardUseCompatPadding="true"
+				app:cardBackgroundColor="#ffffff"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textColor="#000000"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:text="Contribute"
+						android:textStyle="bold"
+						android:layout_gravity="center"
+						/>
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:layout_gravity="center"
+								android:text="Send us suggestion, bugs and others..."/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:layout_gravity="center"
+								android:text="Email: mudasobwa2@gmail.com"/>
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:layout_gravity="center"
+								android:text="Email: mudasobwa2@gmail.com"/>
+							
+							
+					
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#000000"
+								android:tint="#000000"
+								android:layout_gravity="center"
+								android:autoLink="web"
+								android:text="Telegram: https://t.me/mudasobwatv"/>
+							
+						</LinearLayout>
+
+						
+									
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/developer"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+                        android:visibility="gone"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#000000"
+							app:srcCompat="@drawable/ic_person"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="AsDEV"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+
+								android:text="Marc Albert"/>
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="10dp"/>
+
+			<android.support.v7.widget.CardView
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				app:cardCornerRadius="2.0dip"
+				app:cardElevation="2.0dip"
+				app:cardUseCompatPadding="true"
+				app:cardBackgroundColor="#ffffff"
+				>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:paddingTop="10dp"
+					android:paddingBottom="10dp"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10dp"
+						android:textColor="#000000"
+						android:text="Special Thanks to"
+						android:textStyle="bold"
+						android:layout_gravity="center"/>
+                    
+
+                    <LinearLayout
+                        
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp">
+
+                  
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+								android:textColor="#000000"
+						
+								android:layout_gravity="center"
+								android:text="✓ J5 programmer"/>
+							<TextView
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+								android:textColor="#000000"
+
+								android:layout_gravity="center"
+								android:text="✓ jmgcTV"/>
+							<TextView
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+								android:textColor="#000000"
+
+								android:layout_gravity="center"
+								android:text="✓ S.elyse"/>
+							<TextView
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+								android:textColor="#000000"
+
+								android:layout_gravity="center"
+								android:text="✓ Cukumbura"/>
+							
+							
+							
+                        </LinearLayout>
+
+						
+					</LinearLayout>
+					<TextView
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="#000000"
+						android:layout_marginTop="10dp"
+						android:layout_gravity="center"
+						android:text="©Copyright 2022 | Mudasobwatunnel plus - All Rights Reserved."/>
+					
+               
+			
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#ff999999"
+							app:srcCompat="@drawable/ic_person"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Ronshiel Gitalan"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:autoLink="web"
+								android:text="https://www.facebook.com/iamronshiel"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#ff999999"
+							app:srcCompat="@drawable/ic_person"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="IvanLloyd Carreon DelaCruz"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:autoLink="web"
+								android:text="https://www.facebook.com/SZK.BlooDHackS11"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:background="?selectableItemBackground"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:clickable="true"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:minHeight="50dp">
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<ImageButton
+							android:background="@android:color/transparent"
+							android:layout_width="40dp"
+							android:layout_height="40dp"
+							android:tint="#ff999999"
+							app:srcCompat="@drawable/ic_person"/>
+
+						<View
+							android:layout_width="20dp"
+							android:layout_height="wrap_content"/>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Benito Ludo Requintosa"/>
+
+							<TextView
+								android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:autoLink="web"
+								android:text="https://www.facebook.com/cmundefeatedhero"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adView2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+				android:layout_gravity="bottom"
+				android:layout_marginTop="10dp">
+
+			</com.google.android.gms.ads.AdView>
+			
+
+			<View
+				android:layout_width="0.0dip"
+				android:layout_height="15dp"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
